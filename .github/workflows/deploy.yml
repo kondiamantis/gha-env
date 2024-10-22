@@ -34,7 +34,7 @@ jobs:
       - name: Output information
         run: |
           echo 'MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}'
-          echo ${{ github.env}}
+          echo ${{ github.repository}}
   deploy:
     needs: test
     runs-on: ubuntu-latest
